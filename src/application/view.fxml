@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="644.0" prefWidth="624.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.InterfaceController">
+   <children>
+      <Label layoutX="148.0" layoutY="6.0" prefHeight="32.0" prefWidth="330.0" text="Employee Management System" textFill="#eeebeb">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <ScrollPane fx:id="scrollPane" layoutX="29.0" layoutY="326.0" prefHeight="296.0" prefWidth="519.0">
+         <content>
+            <ListView fx:id="listView" prefHeight="286.0" prefWidth="509.0" />
+         </content>
+      </ScrollPane>
+      <TextField fx:id="empid" layoutX="39.0" layoutY="95.0" promptText="Enter employee ID" />
+      <TextField fx:id="empName" layoutX="39.0" layoutY="138.0" promptText="Enter employee Name" />
+      <CheckBox fx:id="fulltime" layoutX="39.0" layoutY="186.0" mnemonicParsing="false" text="Full-Time" textFill="#f5f3f3">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </CheckBox>
+      <ComboBox fx:id="job" layoutX="299.0" layoutY="95.0" prefHeight="25.0" prefWidth="243.0" promptText="Job" />
+      <Label layoutX="298.0" layoutY="142.0" text="Gender" textFill="#f5f2f2">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="male" layoutX="301.0" layoutY="178.0" mnemonicParsing="false" text="Male" textFill="#ebe7e7">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="female" layoutX="387.0" layoutY="178.0" mnemonicParsing="false" text="Female" textFill="#ebe7e7">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="others" layoutX="478.0" layoutY="178.0" mnemonicParsing="false" text="Others" textFill="#ebe7e7">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </RadioButton>
+      <Button layoutX="46.0" layoutY="223.0" mnemonicParsing="false" onAction="#addEmployee" prefHeight="39.0" prefWidth="440.0" style="-fx-background-color: green;" text="Add" textFill="#e8e3e3">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="558.0" layoutY="343.0" mnemonicParsing="false" onAction="#deleteEmployee" style="-fx-background-color: red;" text="Delete" textFill="#f5efef" />
+      <Button layoutX="492.0" layoutY="223.0" mnemonicParsing="false" onAction="#reset" prefHeight="39.0" prefWidth="82.0" style="-fx-background-color: blue;" text="Reset" textFill="#e8e3e3">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
